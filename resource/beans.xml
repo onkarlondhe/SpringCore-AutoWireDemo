@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="stud1" class="com.mzos.Student" autowire="byType" >
+ 	
+ 	<property name="studId" value="1"></property>
+ 	<property name="studName" value="Onkar Londhe"></property>
+ 	<property name="studCollege" value="DYPCOE"></property>
+ 	
+ 	</bean>
+ 	
+ 	<bean id="stud2" class="com.mzos.Student" autowire="byType" >
+ 	
+ 	<property name="studId" value="2"></property>
+ 	<property name="studName" value="Kishor Parde"></property>
+ 	<property name="studCollege" value="JSPM"></property>
+ 	
+ 	</bean>
+ 	
+ 	<bean id="studAddress" class="com.mzos.Address">
+ 	<property name="city" value="Solapur"></property>
+ 	<property name="state" value="Maharastra"></property>
+ 	<property name="pin" value="413410"></property>
+ 	
+ 	</bean>
+
+	 
+</beans>
